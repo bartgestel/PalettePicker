@@ -1,0 +1,44 @@
+{
+  "manifest_version": 2,
+  "name": "Palette Picker",
+  "version": "1.0.0",
+  "description": "Pick colors from any webpage and get beautiful palette suggestions based on color theory",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{a7f8b2c4-5d6e-4f9a-8b1c-2d3e4f5a6b7c}",
+      "data_collection_permissions": {
+        "builtin": false,
+        "required": ["none"]
+      }
+    }
+  },
+  "permissions": [
+    "activeTab",
+    "clipboardWrite",
+    "<all_urls>",
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.svg",
+      "48": "icons/icon-48.svg",
+      "96": "icons/icon-96.svg"
+    }
+  },
+  "icons": {
+    "16": "icons/icon-16.svg",
+    "48": "icons/icon-48.svg",
+    "96": "icons/icon-96.svg"
+  }
+}
