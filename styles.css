@@ -114,13 +114,36 @@ h1 {
   border: 1px solid #e9ecef;
 }
 
+.palette-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
 .palette-title {
   font-size: 14px;
   font-weight: 600;
   color: #333;
-  margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+}
+
+.copy-all-btn {
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 5px 12px;
+  font-size: 11px;
+  font-weight: 500;
+  color: #495057;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.copy-all-btn:hover {
+  background: #e9ecef;
+  border-color: #adb5bd;
 }
 
 .palette-colors {
