@@ -1,11 +1,11 @@
 {
   "manifest_version": 2,
   "name": "Palette Picker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pick colors from any webpage and get beautiful palette suggestions based on color theory",
   "browser_specific_settings": {
     "gecko": {
-      "id": "{a7f8b2c4-5d6e-4f9a-8b1c-2d3e4f5a6b7c}",
+      "id": "palette-picker@example.com",
       "data_collection_permissions": {
         "builtin": false,
         "required": ["none"]
